@@ -1,0 +1,14 @@
+{
+	"cluster": "cluster2-1-3",
+	"serviceName": "srv-ex2-1-3",
+	"taskDefinition": "ex2-1-3",
+	"loadBalancers": [
+		{
+			"targetGroupArn": "arn:aws:elasticloadbalancing:eu-west-3:326654846310:targetgroup/ex2-1-3/14a95ce62395e535",
+			"containerName": "pull_exercise",
+			"containerPort": 4567
+		}
+	],
+	"desiredCount": 1,
+	"role": "ecsServiceRole"
+}
